@@ -16,7 +16,7 @@ def read_input():
     else:
         raise ValueError("Invalid input type. choose I or F")
         
-        return pattern, text
+    return pattern, text
 
 def print_occurrences(output):
     # this function should control output, it doesn't need any return
