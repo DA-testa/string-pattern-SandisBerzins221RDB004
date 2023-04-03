@@ -13,8 +13,6 @@ def read_input():
         with open("tests/06") as f:
             pattern = f.readline().rstrip()
             text = f.readline().rstrip()
-    else:
-        raise ValueError("Invalid input type. choose I or F")
         
     return pattern, text
 
