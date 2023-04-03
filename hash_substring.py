@@ -18,6 +18,11 @@ def read_input():
         
     return pattern, text
 
+ except EOFError:
+        print("Error: unexpected end of input")
+        exit(1)
+
+
 def print_occurrences(output):
     # this function should control output, it doesn't need any return
     print(' '.join(map(str, output)))
