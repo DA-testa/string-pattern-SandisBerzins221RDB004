@@ -31,9 +31,9 @@ def get_occurrences(pattern, text):
         if p_hash == t_hash:
             if pattern == text[i:i+p_len]:
                 result.append(i)
-        if i<t_len - p_len:
+        if i < t_len - p_len:
             t_hash = hash(text[i+1:i+p_len+1])
-            return result
+    return result
         
 # this part launches the functions
 if __name__ == '__main__':
